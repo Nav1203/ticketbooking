@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href='indexstyle.css'>
+        <link rel="stylesheet" href='../background.css'>
+        <script src='indexscript.js'></script>
+    </head>
+    <body>
+      <div class='heading'>
+        <br>
+        <h1 class='site_head'>
+            BuzzBites
+        </h1>
+        <div class='Caption'>The One Stop destination for all your Entertainment needs!</div>
+        </div>
+        <br>
+        <br>
+        <div class='user' id='user'>
+
+        </div>
+        <br>
+        <div class="slideshow-container fade">
+            <div class="Containers">
+        
+              <img class='images' src="../posters/image1.jpg" style="width:30%; box-shadow: 2px 2px 3px;">
+
+              <div class="Info"><button class="bookbutton" onclick='bookmovie(1)'>Book Now!</button></div>
+            </div>
+          
+            <div class="Containers">
+             
+        
+            <img class="images" src="..//posters//image2.jpg" style="width:30%; box-shadow: 2px 2px 3px;">
+      
+            <div class="Info"><button class="bookbutton" onclick='bookmovie(2)'>Book Now!</button></div>
+            </div>
+          
+            <div class="Containers">
+            
+              <img class="images" src="..//posters//image3.jpg" style="width:30%; box-shadow: 2px 2px 3px;">
+            
+              <div class="Info"><button class="bookbutton" onclick='bookmovie(3)'>Book Now!</button></div>
+            </div>
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+          </div>
+          <br>
+          <div class="proceed" onclick="openMainMenu()"><button class="proceedb">Proceed</button></div>
+             
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <script src='seatsel.js'></script>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href='seatsel.css'>
+        <link rel='stylesheet' href='../background.css'>
+    </head>
+    <body>
+        <div class='heading'>
+            <br>
+            <h1 class='site_head'>
+                BuzzBites
+            </h1>
+            <div class='Caption'>The One Stop destination for all your Entertainment needs!</div>
+        </div>
+        <br style='line-height: 2;'>
+        <div class='user' id='user'>
+
+        </div>
+        <br>
+        <div class='text_2'>
+            Please Choose Your Seats!
+        </div>
+        <br style='line-height: 2;'>
+        <div class='center'>
+        <div class='screen'>All Eyes Here</div>
+        </div>
+        <br>
+        <div class='seating_1'>
+        <form id="reservation" method="post">
+            <section id="seats">
+              <input id="seat-1" class="seat-select" type="checkbox" value="1" name="seat[]" />
+              <label for="seat-1" class="seat">1</label>
+              <input id="seat-2" class="seat-select" type="checkbox" value="2" name="seat[]" />
+              <label for="seat-2" class="seat">2</label>
+              <input id="seat-3" class="seat-select" type="checkbox" value="3" name="seat[]" />
+              <label for="seat-3" class="seat">3</label>
+              <input id="seat-4" class="seat-select" type="checkbox" value="4" name="seat[]" />
+              <label for="seat-4" class="seat">4</label>
+              <br>
+              <input id="seat-5" class="seat-select" type="checkbox" value="5" name="seat[]" />
+              <label for="seat-5" class="seat">5</label>
+              <input id="seat-6" class="seat-select" type="checkbox" value="6" name="seat[]" />
+              <label for="seat-6" class="seat">6</label>
+              <input id="seat-7" class="seat-select" type="checkbox" value="7" name="seat[]" />
+              <label for="seat-7" class="seat">7</label>
+              <input id="seat-8" class="seat-select" type="checkbox" value="8" name="seat[]" />
+              <label for="seat-8" class="seat">8</label>
+              <br>
+              <input id="seat-9" class="seat-select" type="checkbox" value="9" name="seat[]" />
+              <label for="seat-9" class="seat">9</label>
+              <input id="seat-10" class="seat-select" type="checkbox" value="10" name="seat[]" />
+              <label for="seat-10" class="seat">10</label>
+              <input id="seat-11" class="seat-select" type="checkbox" value="11" name="seat[]" />
+              <label for="seat-11" class="seat">11</label>
+              <input id="seat-12" class="seat-select" type="checkbox" value="12" name="seat[]" />
+              <label for="seat-12" class="seat">12</label>
+            </section>
+        </form>
+        </div>
+        <br>
+        <div class='center text_2'>
+            <div id='booked'>
+
+            </div>
+        </div>
+        <br style='line-height: 3;'>
+        <div class=center>
+        <button class='but' onclick="send_bookdata()">
+            Proceed
+        </button>
+        </div>
+    </body>
+</html>

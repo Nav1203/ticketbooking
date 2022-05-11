@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            var xmlhttp=new XMLHttpRequest();
+            var url="http://127.0.0.1:5000/getpydata";
+            xmlhttp.onreadystatechange=function()
+            {
+                if(this.readyState==4 && this.status==200)
+                {
+                    var myArr=JSON.parse(this.responseText);
+                    console.log(myArr);
+                    console.log(myArr.userdata[0].name)
+                    myFunction(myArr);
+                }
+            };
+            xmlhttp.open("GET",url,true);
+            xmlhttp.send();
+
+            function myFunction(arr){
+                var out = "";
+                var i;
+                out+='<ol>';
+                for(i = 0; i < arr.userdata.length; i++) {
+                    var a=arr.userdata[i].id +'='+ arr.userdata[i].name+','+arr.userdata[i].number;
+                    console.log(a);
+                    out += '<li>' + arr.userdata[i].id +'='+ arr.userdata[i].name+','+arr.userdata[i].number+ '</li>';
+                }
+                out+='</ol>';
+                document.getElementById("data").innerHTML = out;
+            }
+        </script>
+    </head>
+    <body>
+        <div id='data'>
+
+        </div>
+    </body>
+</html>
